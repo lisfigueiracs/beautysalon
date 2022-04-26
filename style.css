@@ -38,7 +38,7 @@ body {
     -webkit-font-smoothing: antialised;
 }
 
-h1 {
+.title {
     font: 700 1.875rem "Poppins", sans-serif;
     color: var(--title-color);
     -webkit-font-smoothing: auto;
@@ -124,7 +124,32 @@ nav {
     width: 100%;
 }
 
+nav ul.grid {
+    gap: 4rem;
+}
 
+nav ul li {
+    text-align: center;
+}
+
+nav .menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+
+    background: var(--body-color);
+
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 /* =================== HOME ========================= */
 #home {
